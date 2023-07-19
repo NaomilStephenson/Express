@@ -2,7 +2,7 @@ const express = require('express');                             // Load dependen
 
 const app = express();                                          // Instanciate as function
 
-const server = app.listen((4000)() => {                         // Start server, Define port as 4000 and send confirmation to console
+const server = app.listen((4000),() => {                         // Start server, Define port as 4000 and send confirmation to console
     console.log(`Server is listening…`);
 });
 
