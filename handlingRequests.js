@@ -17,7 +17,12 @@ app.delete('/delete/:id', (request, response)=>{                        // '/;id
 });
 
 
-
+app.get("/addition/:A/:B", (request, response) => {                     // Parameters for Operations
+    let num1 = parseInt(request.params.A);
+    let num2 = parseInt(request.params.B);
+    let result = num1 + num2;
+    response.send(`The result is ${result}`);
+});
 
 app.get("/", (request,response) => {                                    // Parameters for navigation
     response.write("<h1> <centre> Welcome to the Employee Database </centre> </h1>");
