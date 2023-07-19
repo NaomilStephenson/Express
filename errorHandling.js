@@ -11,6 +11,6 @@ const sendError = (err, request, response) => {             // Function - Sends 
 };
 app.use(sendError);                                         // Makes function usable
 
-app.get('/error', (request, response, next) -> {            // Handles an error route
+app.get('/error', (request, response, next) => {            // Handles an error route
     next(err);
 });
