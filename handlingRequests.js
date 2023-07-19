@@ -12,7 +12,7 @@ app.delete('/home', (request, response)=>{                              // '/hom
     console.log(request.params.id);
 });
 
-app.delete('/delete/:id', (request, response)=>{                        // '/;id' = Parameter ( Params)
+app.delete('/delete/:id', (request, response)=>{                        // '/:id' = Parameter ( Params)
     console.log(request.params.id);                                     // how to use the params
 });
 
