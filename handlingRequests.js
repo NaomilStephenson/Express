@@ -2,7 +2,7 @@ app.get('/read', (request, response)=>console.log('fetch'));            // Get  
 
 app.post('/create', (request, response)=>console.log('create'));        // Post = create new
 
-app.put('/replace', (request, response)=>console.log('replace'));       // Put = Replace
+app.put('/replace', (request, response)=>console.log('replace'));       // Put = for full updates
 
 app.patch('/update', (request, response)=>console.log('update'));       // Patch = for partial updates
 
@@ -17,14 +17,14 @@ app.delete('/delete/:id', (request, response)=>{                        // '/:id
 });
 
 
-app.get("/addition/:A/:B", (request, response) => {                     // Parameters for Operations
+app.get("/addition/:A/:B", (request, response) => {                     // Parameters for Operations example
     let num1 = parseInt(request.params.A);
     let num2 = parseInt(request.params.B);
     let result = num1 + num2;
     response.send(`The result is ${result}`);
 });
 
-app.get("/", (request,response) => {                                    // Parameters for navigation
+app.get("/", (request,response) => {                                    // Parameters for navigation example
     response.write("<h1> <centre> Welcome to the Employee Database </centre> </h1>");
     response.write("<b> List of departments</b><br />");
     response.write("<a href='/department/1'>HR department</a><br />");
