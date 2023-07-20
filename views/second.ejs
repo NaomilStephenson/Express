@@ -1,0 +1,11 @@
+<html>
+    <h1>Multiply <%= n %> by ...</h1>
+    <h3>Select your <strong>Second Number</strong></h3>
+    <ul>
+    <%  for (let x = 1; x <= 10; x++) {  
+        let y = x * 10; 
+    %>
+        <li><a href="http://127.0.0.1:4000/second/<%= n %>/<%= y %>"><%= y %></a></li>
+    <%  }   %>
+    </ul>
+</html>

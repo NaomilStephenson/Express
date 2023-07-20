@@ -1,10 +1,32 @@
 <html>
-    <h1>Select a Number</h1>
-
-    <ul>
-    <%  for (let i = 1; i <= 12; i++) {   
-    %>
-        <li><a href="http://127.0.0.1:4000/timestable/<%= i %>"><%= i %></a></li>
-    <%  }   %>
-    </ul>
+    <table>
+        <tr>
+            <td>
+                <h1>Single</h1>
+            </td>
+            <td> -  -  -  -  -  - </td>
+            <td>
+                <h1>Multiple</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                <%  for (let i = 1; i <= 12; i++) {   
+                %>
+                    <li><a href="http://127.0.0.1:4000/single/<%= i %>"><%= i %></a></li>
+                <%  }   %>
+                </ul>
+            </td>
+            <td></td>
+            <td>
+                <ul>
+                <%  for (let i = 1; i <= 12; i++) {   
+                %>
+                    <li><a href="http://127.0.0.1:4000/second/<%= i %>"><%= i %></a></li>
+                <%  }   %>
+                </ul>
+            </td>
+        </tr>
+    </table>
 </html>
