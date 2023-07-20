@@ -22,7 +22,7 @@ server.get("/second/:n",(request, response) => {
     response.end();
 });
 
-// Second Route to template 'Second Results'
+// Second Route to template 'Second Answers'
 server.get("/second/:n/:nn",(request, response) => {
     response.render("secondtables.ejs",{n:request.params.n,nn:request.params.nns});
     response.end();

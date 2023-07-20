@@ -1,11 +1,14 @@
 <html>
     <h1>Times table of: <%= n %> x <%= nn %></h1>
     <table>
+        <!-- Mukltiple Answers -->
         <tr colspan="3"></tr><%= n %> x <%= nn %> = <strong><%= n * nn %></strong></tr>
         <tr height="10"><td></td></tr>
         <tr>
+            <!-- Multiple Routes back to second number selected (keeping 1st number selected)-->
             <td><a href="http://127.0.0.1:4000/second/<%= n %>">back</a></td>
             <td width="50"></td>
+            <!-- Route back to 'landing page' -->
             <td><a href="http://127.0.0.1:4000">home</a></td>
         </tr>
     </table>
